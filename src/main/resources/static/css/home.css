@@ -11,7 +11,6 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-image: url(../images/ave.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,24 +21,53 @@
 
 }
 
+header{
+    background-image: url(../images/ave.png);
+    height: 65vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.ti{
+   padding-top:  13%;
+   padding-right: 5%;
+       
+}
+
+h1{
+    color: #fff;
+    
+}
+
+
 .navbar{
-    height: 15vh;
+    height: 60vh;
     width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
+    padding-bottom: 89%;
 
 }
 
 .logo{
     width: 160px;
     cursor: pointer;
+    padding-bottom: 100%;
+    padding-top: 12%
 
 }
 
 nav{
     flex: 1;
-    padding-left: 60px;
+    padding-left: 90px;
+    padding-bottom: 70%;
+    padding-top: 2%;
 
 }
 
@@ -47,6 +75,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0px 15px;
+    float: right;
 }
 
 nav ul li a {
@@ -67,4 +96,83 @@ nav ul li a {
     font-size: 40px;
     color: white;
 }
+
+
+.card-link{
+   font-size: 12px; 
+}
+
+h10{
+   font-size: 12px; 
+}
+
+.card-text{
+    margin-top: 8px;
+}
+
+.card-text1{
+    font-size: 12px;
+}
+
+
+.card{
+    margin-top: 60px;
+    float: right;
+    margin-right: 150px;
+}
+
+
+.card3{
+    margin-top: 100px;
+    float: right;  
+    clear: both;
+    margin-right: 150px;
+}
+
+
+.card-group{
+   margin-top: 100px; 
+   float: right;
+   clear: both;
+}
+
+.card4{
+    margin-left: 45px;
+    margin-right: 150px;
+}
+
+.perfil{
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.btn{
+    margin-left: 100px;
+}
+
+
+.card-header{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.categorias{
+    margin-left: 90px;
+    margin-top: 90px;
+}
+
+.card-body1{
+    text-align: center;
+}
+
+.Popular{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.card-title1{
+    margin-bottom: 10px;
+}
+
+
 
