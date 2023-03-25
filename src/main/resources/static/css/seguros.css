@@ -22,8 +22,8 @@
 }
 
 header{
-    background-image: url(../images/ave.png);
-    height: 55vh;
+    background-image: url(../images/seguro.jpeg);
+    height: 40vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -32,10 +32,10 @@ header{
     background-repeat: no-repeat;
 }
 
-
-.ti{
+.segu{
    padding-top:  13%;
-   padding-right: 5%;
+   padding-right: 5%; 
+   color: #000;
        
 }
 
@@ -80,98 +80,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 
-}
-
-.content h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.content p {
-    font-size: 40px;
-    color: white;
-}
-
-
-.card-link{
-   font-size: 12px; 
-}
-
-h10{
-   font-size: 12px; 
-}
-
-.card-text{
-    margin-top: 8px;
-}
-
-.card-text1{
-    font-size: 12px;
-}
-
-
-.card{
-    margin-top: 60px;
-    float: right;
-    margin-right: 150px;
-}
-
-
-.card3{
-    margin-top: 100px;
-    float: right;  
-    clear: both;
-    margin-right: 150px;
-}
-
-
-.card-group{
-   margin-top: 100px; 
-   float: right;
-   clear: both;
-}
-
-.card4{
-    margin-left: 45px;
-    margin-right: 160px;
-}
-
-.perfil{
-    margin-top: 60px;
-    margin-left: 90px;
-}
-
-.btn{
-    margin-left: 100px;
-}
-
-
-.card-header{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.categorias{
-    margin-left: 90px;
-    margin-top: 90px;
-}
-
-.card-body1{
-    text-align: center;
-}
-
-.Popular{
-    margin-top: 60px;
-    margin-left: 70px;
-}
-
-.card-title{
-    text-align: center;
 }
 
 .nav-right2{
@@ -179,17 +89,82 @@ h10{
 }
 
 
+.descripcionipcion{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.btn{
+    margin-top: 150px;
+}
+
+.conten-sub{
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conten-sub form{
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+
+.conten-sub form .campo{
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.conten-sub form .btn-sub{
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    
+}
+
+.conten-sub form .btn-sub:hover{
+    background: silver;
+}
+
+.card-group{
+    margin-top: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card4{
+    margin-right: 150px;
+}
+
+.card3{
+    margin-right: 100px;
+}
+
+.card2{
+    margin-right: 100px;
+    margin-left:  150px;
+}
+
 footer{
    background: #000;
    height: auto;
    width: 100vw;
    font-family: 'Playfair Display', serif;
-   padding-top: 40px;
+   padding-top: 100px;
    color: #fff;
    display: flex;
-   bottom: 0;
-   left: 0;
-   right: 0;
 }
 
 .footer-content{
@@ -204,24 +179,24 @@ footer{
     line-height: 28px;
 }
 
-
 .socials{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    
 }
 
 .socials li{
-    margin: 0 10px;
+    margin: 0 20px;
     
 }
 
 .socials a{
     text-decoration: none;
     color: #fff;
-}
+
 
 .socials a i{
     font-size: 1.1rem;
@@ -251,4 +226,3 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
-
