@@ -1,101 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-
-}
-
-.container{
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    position: relative;
-
-}
-
 header{
-    background-image: url(../images/seguro.jpeg);
-    height: 40vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/seguros.jpg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.segu{
-   padding-top:  13%;
-   padding-right: 5%; 
-   color: #000;
-       
-}
-
-h1{
-    color: #fff;
-    
-}
-
-
-.navbar{
-    height: 60vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    padding-bottom: 89%;
-
-}
-
-.logo{
-    width: 160px;
-    cursor: pointer;
-    padding-bottom: 100%;
-    padding-top: 12%
-
-}
-
-nav{
-    flex: 1;
-    padding-left: 90px;
-    padding-bottom: 70%;
-    padding-top: 2%;
-
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 35px;
-    float: right;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-
-}
-
-.nav-right2{
-    margin-top: 16px;
-}
-
-
-.descripcionipcion{
+.desc-seguro{
     margin-left: 5px;
     margin-top: 20px;
 }
 
-.btn{
-    margin-top: 150px;
+.desc-seguro button {
+    background: #0EDE00;
+    margin: 50px;
+    border: #0EDE00;
+}
+
+.desc-seguro button:hover {
+    background: #FFA500;
 }
 
 .conten-sub{
@@ -115,7 +37,14 @@ nav ul li a {
     margin-bottom: 100px;
 }
 
+.conten-sub-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
+.conten-sub-text span {
+    color: #0EDE00;
+}
 
 .conten-sub form .campo{
     width: 100%;
@@ -129,103 +58,22 @@ nav ul li a {
     font-size: 16px;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
-    
+    background: #099100;
+    color: #FFF;
 }
 
 .conten-sub form .btn-sub:hover{
-    background: silver;
+    background: #0EDE00;
 }
 
-.card-group{
-    margin-top: 200px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.card4{
-    margin-right: 150px;
-}
-
-.card3{
-    margin-right: 100px;
-}
-
-.card2{
-    margin-right: 100px;
-    margin-left:  150px;
-}
-
-footer{
-   background: #000;
-   height: auto;
-   width: 100vw;
-   font-family: 'Playfair Display', serif;
-   padding-top: 100px;
-   color: #fff;
-   display: flex;
-}
-
-.footer-content{
+.img-group{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 75px;
 }
 
-.footer-content p{
-    max-width: 500px;
-    margin: 0px auto;
-    line-height: 28px;
+.img-group img{
+    width: 300px;
 }
-
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-    
-}
-
-.socials li{
-    margin: 0 20px;
-    
-}
-
-.socials a{
-    text-decoration: none;
-    color: #fff;
-
-
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover i{
-    color: green;
-}
-
-.footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    
-}
-
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-
-}
-}
-

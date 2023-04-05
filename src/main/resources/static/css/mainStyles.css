@@ -32,6 +32,7 @@ a {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar ul li {
@@ -64,16 +65,19 @@ a {
     color: #FFA500;
 }
 
+.main-container {
+    padding: 60px 60px 250px 60px;
+}
+
 /************************************ header ************************************/
 
 .header {
     height: 40vh;
     width: 100%;
-    background: #141516;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/signup.jpg");
+/*    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/signup.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     display: flex;
     justify-content: center;
     align-items: center;
