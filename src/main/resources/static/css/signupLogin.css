@@ -31,6 +31,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.navbar {
+    margin: 8px 0;
+}
 .center {
     display: flex;
     flex-direction: column;

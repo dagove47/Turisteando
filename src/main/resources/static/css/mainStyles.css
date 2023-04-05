@@ -32,9 +32,10 @@ a {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.header .navbar {
     background: rgba(0, 0, 0, 0.7);
 }
-
 .navbar ul li {
     display: flex;
     align-items: center;
