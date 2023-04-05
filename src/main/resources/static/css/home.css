@@ -1,254 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-
-}
-
-.container{
+.header{
     height: 100vh;
-    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ave.png);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    position: relative;
-
-}
-
-header{
-    background-image: url(../images/ave.png);
-    height: 55vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;
+    flex-direction: column;
 }
-
-
-.ti{
-   padding-top:  13%;
-   padding-right: 5%;
-       
-}
-
-h1{
-    color: #fff;
-    
-}
-
-
-.navbar{
-    height: 60vh;
+.header h1{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    margin: auto;
+    margin-top: auto;
+    padding: 0 0 0 75px;
+    flex-direction: column;
+}
+.header h1 span{
+    color: #0EDE00;
+}
+.header-bottom {
     display: flex;
-    align-items: center;
-    padding-bottom: 89%;
-
-}
-
-.logo{
-    width: 160px;
-    cursor: pointer;
-    padding-bottom: 100%;
-    padding-top: 12%
-
-}
-
-nav{
-    flex: 1;
-    padding-left: 90px;
-    padding-bottom: 70%;
-    padding-top: 2%;
-
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 35px;
-    float: right;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-
-}
-
-.content h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.content p {
-    font-size: 40px;
-    color: white;
-}
-
-
-.card-link{
-   font-size: 12px; 
-}
-
-h10{
-   font-size: 12px; 
-}
-
-.card-text{
-    margin-top: 8px;
-}
-
-.card-text1{
-    font-size: 12px;
-}
-
-
-.card{
-    margin-top: 60px;
-    float: right;
-    margin-right: 150px;
-}
-
-
-.card3{
-    margin-top: 100px;
-    float: right;  
-    clear: both;
-    margin-right: 150px;
-}
-
-
-.card-group{
-   margin-top: 100px; 
-   float: right;
-   clear: both;
-}
-
-.card4{
-    margin-left: 45px;
-    margin-right: 160px;
-}
-
-.perfil{
-    margin-top: 60px;
-    margin-left: 90px;
-}
-
-.btn{
-    margin-left: 100px;
-}
-
-
-.card-header{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.categorias{
-    margin-left: 90px;
-    margin-top: 90px;
-}
-
-.card-body1{
-    text-align: center;
-}
-
-.Popular{
-    margin-top: 60px;
-    margin-left: 70px;
-}
-
-.card-title{
-    text-align: center;
-}
-
-.nav-right2{
-    margin-top: 16px;
-}
-
-
-footer{
-   background: #000;
-   height: auto;
-   width: 100vw;
-   font-family: 'Playfair Display', serif;
-   padding-top: 40px;
-   color: #fff;
-   display: flex;
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
-
-.footer-content{
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    font-size: 1.5rem;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
 }
-
-.footer-content p{
-    max-width: 500px;
-    margin: 0px auto;
-    line-height: 28px;
+.header-icon {
+    margin-left: 50vw;
+    color: #0EDE00;
+    font-size: 3rem;
 }
-
-
-.socials{
-    list-style: none;
+.header-icon:hover {
+    color: #FFA500;
+}
+.access {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin-left: auto;
+    color: #FFA500;
+    font-size: 2rem;
+    font-weight: 700;
 }
-
-.socials li{
-    margin: 0 10px;
-    
+.access li {
+    list-style-type: none;
+    padding: 0 20px;
 }
-
-.socials a{
-    text-decoration: none;
-    color: #fff;
+.access li a:hover {
+    color: #0EDE00;
 }
-
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover i{
-    color: green;
-}
-
-.footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    
-}
-
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-
