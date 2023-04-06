@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<html>
+    <head>
+        <title>TOURS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("https://fondosmil.com/fondo/2295.jpg");
+                background-size: cover;
+            }
+
+            table {
+                background-color: white;
+                font-size: 18px;
+            }
+
+            th, td {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-weight: bold;
+            }
+
+            h1.page-title {
+                font-size: 72px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <a th:href="@{/new-tours}" class="btn btn-primary">Nuevo</a>
+            <h1 class="page-title">TOURS</h1>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre tour</th>
+                        <th>Destinos</th>
+                        <th>Tipo de tour</th>
+                        <th>Duracion</th>
+                        <th>Incluye</th>
+                        <th>Precios</th>
+                        <th>Cantidad de personas</th>
+                        <th>Guia turistico</th>
+                        <th>Seguridad</th>
+                    </tr>
+                </thead>
+                <tbody class="comment-section">
+                    <tr th:each="tours:${Tours}">
+                        <td th:text="${tours.id}"></td>
+                        <td th:text="${tours.nombre_tour}"></td>
+                        <td th:text="${tours.destinos}"></td>
+                        <td th:text="${tours.tipo_de_tour}"></td>
+                        <td th:text="${tours.duracion}"></td>
+                        <td th:text="${tours.incluye}"></td>
+                        <td th:text="${tours.precios}"></td>
+                        <td th:text="${tours.cantidad_de_personas}"></td>
+                        <td th:text="${tours.guiasturisticos}"></td>
+                        <td th:text="${tours.seguridad}"></td>
+                        <td>
+                            <a th:href="@{/editar-tours/}+${tours.id}" class="btn btn-warning">Editar</a>
+                            <a th:href="@{/eliminar-tours/}+${tours.id}" class="btn btn-success" onclick="return confirm('¿Estás seguro de que deseas eliminar este tour?')">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/" class="btn btn-secondary">Regresar a la página principal</a>
+            
+            <div class="row mt-4">
+    <div class="col-md-8 offset-md-2">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+            
+        </div>
+        
+        
+        
+    </body>
+</html>

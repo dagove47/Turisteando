@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOURS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <style>
+            body {
+                
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .card-header {
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                background-color: rgba(0,0,0,0.7);
+                padding: 1rem;
+            }
+            .form-group {
+                font-size: 1.5rem;
+            }
+            input[type="text"], input[type="date"] {
+                font-size: 1.5rem;
+            }
+            .card {         
+                    margin: 0 auto;
+
+            }
+            .btn {
+                font-size: 1.5rem;
+                width: 100%;
+          
+    
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titulo">TURISTIANDO</div>
+        <div class="container mt-4">
+            <div class="col-sm-6">
+                <form th:action="@{/save-tours}" th:object="${Tours}" method="POST">
+                    <div class="card0">
+                        
+                        <div class="card-header">
+                            <h3>TOURS</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input th:field="*{id}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Nombre tour:</label>
+                                <input th:field="*{nombre_tour}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Destinos:</label>
+                                <input th:field="*{destinos}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Tipo de tour:</label>
+                                <input th:field="*{tipo_de_tour}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Duracion:</label>
+                                <input th:field="*{duracion}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Incluye:</label>
+                                <input th:field="*{incluye}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Precio:</label>
+                                <input th:field="*{precios}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Cantidad de personas:</label>
+                                <input th:field="*{cantidad_de_personas}" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Guias turisticos:</label>
+                                <input th:field="*{guiasturisticos}" type="text" class="form-control">
+                            </div>
+                             <div class="form-group">
+                                <label>Seguridad: </label>
+                                <input th:field="*{seguridad}" type="text" class="form-control">
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+           <input type="submit" value="Guardar" class="btn btn-success">
+           </div>
+           </form>
+         </div>
+        </div>
+    </body>
+</html>
