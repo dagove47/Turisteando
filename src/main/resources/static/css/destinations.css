@@ -4,3 +4,24 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 60px 0;
+}
+.destinations>.btn-group{
+    width: 100%;
+    margin: 60px 0;
+}
+.destinations>.btn-group label{
+    border-color: #000;
+    color: #000;
+    font-size: 1.3rem;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #099100;
+    border-color: #099100;
+}

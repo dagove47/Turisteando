@@ -44,7 +44,7 @@ a {
     color: #fff;
 }
 .formTitle{
-    color: #0DD100;
+    color: #FFA500;
     font-size: 4rem;
 }
 
@@ -96,11 +96,11 @@ a {
     font-size: 20px;
     font-weight: 500;
     border-radius: 20px;
-    border: 5px solid #0DD100;
+    border: 5px solid #FFA500;
 }
 .formBtn:hover {
-    background: #FFA500;
-    border: 5px solid #FFA500;
+    background: #0DD100;
+    border: 5px solid #0DD100;
 }
 
 .checkbox {

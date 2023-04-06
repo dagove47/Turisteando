@@ -1,6 +1,6 @@
 .header{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ave.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/homepage1.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@
     align-items: center;
     margin-left: auto;
     color: #FFA500;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 .access li {
