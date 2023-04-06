@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<html>
+    <head>
+        <title>Contactenos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("https://fondosmil.com/fondo/74615.jpg");
+                background-size: cover;
+            }
+
+            table {
+                background-color: white;
+                font-size: 18px;
+            }
+
+            th, td {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-weight: bold;
+            }
+
+            h1.page-title {
+                font-size: 72px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <a th:href="@{/new-contacto}" class="btn btn-primary">Nuevo</a>
+            <h1 class="page-title">Contactenos</h1>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Producto interesado</th>
+                        <th>Contacto</th>
+                        <th>fecha de solicitud</th>
+                        <th>Consulta</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="comment-section">
+                    <tr th:each="personacontacto:${PersonaContacto}">
+                        <td th:text="${personacontacto.id}"></td>
+                        <td th:text="${personacontacto.nombre}"></td>
+                        <td th:text="${personacontacto.producto_interesado}"></td>
+                        <td th:text="${personacontacto.contacto}"></td>
+                        <td th:text="${personacontacto.fecha_solicitud}"></td>
+                        <td th:text="${personacontacto.consulta}"></td>
+                        <td>
+                            <a th:href="@{/editar-contacto/}+${personacontacto.id}" class="btn btn-warning">Editar</a>
+                            <a th:href="@{/eliminar-contacto/}+${personacontacto.id}" class="btn btn-success" onclick="return confirm('¿Estás seguro de que deseas eliminar este contacto?')">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/" class="btn btn-secondary">Regresar a la página principal</a>
+        </div>
+    </body>
+</html>
