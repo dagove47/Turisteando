@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<html>
+    <head>
+        <title>Contactenos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("https://i.ytimg.com/vi/sw7463aYB5k/maxresdefault.jpg");
+                background-size: cover;
+            }
+
+            table {
+                background-color: white;
+                font-size: 18px;
+            }
+
+            th, td {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-weight: bold;
+            }
+
+            h1.page-title {
+                font-size: 72px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <a th:href="@{/new-seguros}" class="btn btn-primary">Nuevo</a>
+            <h1 class="page-title">SEGUROS</h1>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Aseguradora</th>
+                        <th>Informacion</th>
+                        <th>Tipo de seguro</th>
+                        <th>Cobertura</th>
+                        <th>Precio</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="comment-section">
+                    <tr th:each="seguros:${Seguros}">
+                        <td th:text="${seguros.id}"></td>
+                        <td th:text="${seguros.aseguradora}"></td>
+                        <td th:text="${seguros.informacion}"></td>
+                        <td th:text="${seguros.tipo_seguro}"></td>
+                        <td th:text="${seguros.cobertura}"></td>
+                        <td th:text="${seguros.precio}"></td>
+                        <td>
+                            
+                            <a th:href="@{/eliminar-seguros/}+${seguros.id}" class="btn btn-success" onclick="return confirm('¿Estás seguro de que deseas eliminar este seguro?')">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/" class="btn btn-secondary">Regresar a la página principal</a>
+        </div>
+    </body>
+</html>
