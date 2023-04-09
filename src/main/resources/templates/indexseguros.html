@@ -61,7 +61,7 @@
                         <td th:text="${seguros.cobertura}"></td>
                         <td th:text="${seguros.precio}"></td>
                         <td>
-                            
+                            <a th:href="@{/editar-seguros/}+${seguros.id}" class="btn btn-warning">Editar</a>
                             <a th:href="@{/eliminar-seguros/}+${seguros.id}" class="btn btn-success" onclick="return confirm('¿Estás seguro de que deseas eliminar este seguro?')">Eliminar</a>
                         </td>
                     </tr>

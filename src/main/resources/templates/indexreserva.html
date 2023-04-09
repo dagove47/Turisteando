@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<html>
+    <head>
+        <title>Reserva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("https://fondosmil.com/fondo/2254.jpg");
+                background-size: cover;
+            }
+
+            table {
+                background-color: white;
+                font-size: 18px;
+            }
+
+            th, td {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-weight: bold;
+            }
+
+            h1.page-title {
+                font-size: 72px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <a th:href="@{/new-reserva}" class="btn btn-primary">Nuevo</a>
+            <h1 class="page-title">Reserva</h1>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre de usuario</th>
+                        <th>Nombre de tour</th>
+                        <th>Fecha de reserva</th>
+                        <th>Fecha de inicio </th>
+                        <th>Fecha de fin </th>
+                        <th>Numero de personas</th>
+                        <th>Metodo de pago</th>
+                        <th>Comentario reserva</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody class="comment-section">
+                    <tr th:each="reserva:${Reserva}">
+                        <td th:text="${reserva.id}"></td>
+                        <td th:text="${reserva.nombreusuario}"></td>
+                        <td th:text="${reserva.nombredetour}"></td>
+                        <td th:text="${reserva.fechadereserva}"></td>
+                        <td th:text="${reserva.fechadeinicio}"></td>
+                        <td th:text="${reserva.fechadefin}"></td>
+                        <td th:text="${reserva.numeropersonas}"></td>
+                        <td th:text="${reserva.metododepago}"></td>
+                        <td th:text="${reserva.comentarioreserva}"></td>
+                        
+                        
+                        <td>
+                            <a th:href="@{/editar-reserva/}+${reserva.id}" class="btn btn-warning">Editar</a>
+                            <a th:href="@{/eliminar-reserva/}+${reserva.id}" class="btn btn-success" onclick="return confirm('¿Estás seguro de que deseas eliminar este contacto?')">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/" class="btn btn-secondary">Regresar a la página principal</a>
+        </div>
+    </body>
+</html>
