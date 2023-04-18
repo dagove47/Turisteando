@@ -24,7 +24,7 @@
             <div class="center">
                 <h1 class="formTitle">Iniciar sesión</h1>
                 <p class="signup-login-link">¿Aún no tienes una cuenta? <a href="/signup.html">Regístrate</a></p>
-                <form class="form" action="action">
+                <form class="form" action="/home.html">
                     <div class="txt-field">
                         <label>Correo electrónico</label>
                         <input type="email" id="usuario" name="usuario" required>
@@ -33,9 +33,12 @@
                         <label>Contraseña</label>
                         <input type="password" id="password" name="password" required>
                     </div>
+                    
                     <div class="containerBtn">
-                        <input class="formBtn" type="submit" value="Iniciar sesión">
+                        <input class="formBtn" type="submit" value="Iniciar sesión" formaction="/home.html">
                     </div>
+
+                    
                 </form>
             </div>
         </main>
