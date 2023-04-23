@@ -14,6 +14,7 @@ public interface IpersonaService {
     public Optional<Persona>listarid(int id );
     public int save(Persona p);
     public void delete(int id);
+    public Persona findbyNombre(String username);
     
     
     
