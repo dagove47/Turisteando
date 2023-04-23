@@ -47,8 +47,8 @@ public class PersonaService implements IpersonaService{
     }
 
     @Override
-    public Persona findbyNombre(String email) {
-        return data.findbyNombre(email);
+    public Persona findbyNombre(String username) {
+        return data.findbyNombre(username);
     }
     
     

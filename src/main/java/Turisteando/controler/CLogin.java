@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CLogin {
     
-    @GetMapping("/login")
+    @GetMapping("login")
     public String index(){
-        return "/login";
+        return "login";
     }
     
     
