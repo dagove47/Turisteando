@@ -26,11 +26,14 @@ public class Persona implements Serializable {
     private int id;
     private String name;
     private String telefono;
+    
+    
     private String email;
     private String password;
     private String roles = "";
     private String permissions = "";
     private int active;
+    
     
     public Persona (){
        
