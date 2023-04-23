@@ -45,6 +45,11 @@ public class PersonaService implements IpersonaService{
     public void delete(int id) {
     data.deleteById(id);
     }
+
+    @Override
+    public Persona findbyNombre(String Email) {
+        return data.findbyNombre(Email);
+    }
     
     
 }
