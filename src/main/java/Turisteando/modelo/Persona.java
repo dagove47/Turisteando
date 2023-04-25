@@ -1,11 +1,17 @@
 
 package Turisteando.modelo;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
+import java.util.Collection;
 
 
 @Entity
@@ -16,6 +22,9 @@ public class Persona {
     private int id;
     private String name;
     private String telefono;
+    
+
+
     
     public Persona (){
        
@@ -51,7 +60,8 @@ public class Persona {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
+
+    }  
     
     
 }
