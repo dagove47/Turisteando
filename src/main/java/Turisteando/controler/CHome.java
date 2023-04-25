@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author fagueros
  */
 @Controller 
-@RequestMapping ("/home")
 public class CHome {
     
     @GetMapping("/home")
@@ -21,8 +20,4 @@ public class CHome {
         return "home";
     }
     
-    @GetMapping ("/")
-    public String verInicio(){
-        return "home";
-    }
 }
